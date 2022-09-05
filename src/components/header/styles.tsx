@@ -7,6 +7,7 @@ export default {
     containerHeader: styled.div`
     width: 100%;
     height: 100%;
+    margin-bottom: 8%;
     `,
     containerMenu: styled.div`
     width: 95%;
