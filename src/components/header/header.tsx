@@ -1,29 +1,29 @@
-import styled from './styles'
+import { ContainerHeader, ContainerMenu, ContainerLogo, MenuItem, MenuItemCouple, MenuItemText, MenuItemButton, MenuItemNumber, ContainerMenuitem } from "./styles"
 
 export function Header() {
     return (
-        <styled.containerHeader>
-            <styled.containerMenu>
-                <styled.containerLogo>a
-                </styled.containerLogo>
-                <styled.containerMenuItem >
-                    <styled.menuItem>
-                        <styled.menuItemCouple>
-                            <styled.menuItemText><styled.menuItemNumber>01. </styled.menuItemNumber>About</styled.menuItemText>
-                        </styled.menuItemCouple>
-                        <styled.menuItemCouple>
-                            <styled.menuItemText><styled.menuItemNumber>02. </styled.menuItemNumber>Experience</styled.menuItemText>
-                        </styled.menuItemCouple>
-                        <styled.menuItemCouple>
-                            <styled.menuItemText> <styled.menuItemNumber>03. </styled.menuItemNumber>Work</styled.menuItemText>
-                        </styled.menuItemCouple>
-                        <styled.menuItemCouple>
-                            <styled.menuItemText><styled.menuItemNumber>04. </styled.menuItemNumber>Contact</styled.menuItemText>
-                        </styled.menuItemCouple>
-                    </styled.menuItem>
-                    <styled.menuItemButton>Resume</styled.menuItemButton>
-                </styled.containerMenuItem>
-            </styled.containerMenu>
-        </styled.containerHeader>
+        <ContainerHeader>
+            <ContainerMenu>
+                < ContainerLogo>a
+                </ContainerLogo>
+                <ContainerMenuitem >
+                    <MenuItem>
+                        <MenuItemCouple>
+                            <MenuItemText><MenuItemNumber>01. </MenuItemNumber>About</MenuItemText>
+                        </MenuItemCouple>
+                        <MenuItemCouple>
+                            <MenuItemText><MenuItemNumber>02. </MenuItemNumber>Experience</MenuItemText>
+                        </MenuItemCouple>
+                        <MenuItemCouple>
+                            <MenuItemText> <MenuItemNumber>03. </MenuItemNumber>Work</MenuItemText>
+                        </MenuItemCouple>
+                        <MenuItemCouple>
+                            <MenuItemText><MenuItemNumber>04. </MenuItemNumber>Contact</MenuItemText>
+                        </MenuItemCouple>
+                    </MenuItem>
+                    <MenuItemButton>Resume</MenuItemButton>
+                </ContainerMenuitem>
+            </ContainerMenu>
+        </ContainerHeader>
     )
 }
