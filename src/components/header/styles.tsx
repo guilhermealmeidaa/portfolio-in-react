@@ -2,10 +2,14 @@ import styled, { keyframes } from "styled-components";
 
 const rotate = keyframes`
   from {
-    margin-bottom: 20%;
+    /* margin-bottom: 10%; */
+    opacity: 0;
+    width: auto;
   }
   to {
-    margin-bottom: 0%;
+    /* margin-bottom: 20px; */
+    opacity: 1;
+    width: auto;
   }
 `;
 
@@ -20,6 +24,8 @@ const rotate = keyframes`
     display: flex;
     justify-content: space-between;
     margin: 30px 0px 30px 0px;
+    margin-top: 40px;
+
     `;
 
     export const ContainerLogo = styled.div`
@@ -41,11 +47,13 @@ const rotate = keyframes`
         color: #42c6a7;
     }
     `;
+    
     export const MenuItemText = styled.text`
     color: #8892b0;
     font-family: 'Fira Code', monospace;
     font-size: 13px;
-    cursor: pointer;
+    cursor: pointer;;
+    animation: ${rotate} ${(props) => props.transform} ease-in;
     &:hover{
         color: #42c6a7;
     }
@@ -73,6 +81,8 @@ const rotate = keyframes`
     font-family: 'Fira Code', monospace;
     font-size: 13px;
     background-color: #00000000;
+    animation: ${rotate} 500ms ease-in;
+
     cursor: pointer;
     &:hover{
         background-color: #073043;

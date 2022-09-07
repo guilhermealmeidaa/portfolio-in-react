@@ -1,21 +1,26 @@
 import styled, { keyframes } from "styled-components";
-
 const rotate = keyframes`
   from {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
+    opacity: 0;
+    width: auto;
   }
   to {
-    margin-bottom: 0%;
+    margin-bottom: 15px;
+    opacity: 1;
+    width: auto;
   }
 `;
 
 export const Container = styled.div`
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        padding-bottom: 60px;
+        margin-bottom: 90px;
     `;
     export const ContainerTitle = styled.div`
         width: 80%;
@@ -35,7 +40,7 @@ export const Container = styled.div`
         color: #42c6a7;
         font-family: 'Fira Code', monospace;
         margin-bottom: 17px;
-        animation: ${rotate} 200ms linear;
+        animation: ${rotate} 1000ms ease-in;
     `;
     export const TextName = styled.h1`
         font-size: 4rem;
@@ -43,7 +48,7 @@ export const Container = styled.div`
         color: #ccd6f6;
         margin-bottom: 12px;
         font-family: 'Inter', sans-serif;
-        animation: ${rotate} 300ms linear;
+        animation: ${rotate} 1200ms ease-in;
 
         /* opacity: 0;
         transition: opacity 500ms ease-in */
@@ -54,7 +59,7 @@ export const Container = styled.div`
         color: #8892b0;
         font-family: 'Inter', sans-serif;
         margin-bottom: 17px;
-        animation: ${rotate} 400ms linear;
+        animation: ${rotate} 1400ms ease-in;
 
     `;
     export const TextParagraph = styled.p`
@@ -64,7 +69,7 @@ export const Container = styled.div`
         font-family: 'Inter', sans-serif;
         max-width: 50%;
         line-height: 25px;
-        animation: ${rotate} 500ms linear;
+        animation: ${rotate} 1600ms ease-in;
 
     `;
     export const ContainerButton = styled.div`
@@ -85,7 +90,7 @@ export const Container = styled.div`
         font-size: 13px;
         background-color: #00000000;
         cursor: pointer;
-        animation: ${rotate} 600ms linear;
+        animation: ${rotate} 1800ms ease-in;
         &:hover{
             background-color: #073043;
             transition: 0.3s;
