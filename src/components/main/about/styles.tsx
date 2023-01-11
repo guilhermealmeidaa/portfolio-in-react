@@ -1,13 +1,29 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { BiRightArrow } from "react-icons/bi";
+
+const rotate = keyframes`
+  from {
+    margin-bottom: 10%;
+    opacity: 0;
+    width: auto;
+  }
+  to {
+    margin-bottom: 15px;
+    opacity: 1;
+    width: auto;
+  }
+`;
 
 
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 70%;
+    height: 100vh;
     margin: auto;
-    background-color: aliceblue;
     margin-top: 200px;
+    animation: ${rotate} 1200ms ease-in;
+    
     `;
 export const ContainerAboutAll = styled.div`
     display: flex;
@@ -25,9 +41,10 @@ export const AboutNumber = styled.text`
     color: #42c6a7;
     `;
 export const ContainerAbout = styled.div`
-    display: flex;
+    display: ${props => props.onScroll ? 'nome' : 'flex'};
     flex-direction: column;
     justify-content: space-between;
+    
 `;
 export const ContainerAboutLeft = styled.div`
     margin-top: 40px;
@@ -58,3 +75,21 @@ export const HeaderImage = styled.img`
         transition: 200ms;
     }
   `;
+export const SkillsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10 bpx;
+`;
+export const SkillsImage = styled(BiRightArrow)`
+    color: #42c6a7;
+    margin-right: 10px;
+    font-size: 10px;
+
+`;
+export const SkillsTitle = styled.text`
+    font-size: 12px;
+    color: #ccd6f6;
+    font-family: 'Fira Code', monospace;
+    margin-right: 50px;
+`;

@@ -21,6 +21,7 @@ export const Container = styled.div`
         justify-content: flex-start;
         padding-bottom: 60px;
         margin-bottom: 90px;
+        
     `;
     export const ContainerTitle = styled.div`
         width: 80%;

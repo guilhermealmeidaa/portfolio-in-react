@@ -1,8 +1,15 @@
-import { AboutNumber, AboutTitle, Container, ContainerAbout, ContainerAboutAll, ContainerAboutLeft, ContainerAboutRight, ContainerAboutText, HeaderImage } from "./styles"
+import { AboutNumber, AboutTitle, Container, ContainerAbout, ContainerAboutAll, ContainerAboutLeft, ContainerAboutRight, ContainerAboutText, HeaderImage, SkillsContainer, SkillsImage, SkillsTitle } from "./styles"
 import gatinhoImage from "../../../assets/gatinho.jpeg";
+import { BiRightArrow } from "react-icons/bi";
 
 
 export function About () {
+    
+    const handleScroll = () => { 
+        if (document.documentElement.scrollTop >  227) {
+            return true;
+         } 
+       }
     return(
         <Container>
             <ContainerAbout>
@@ -21,6 +28,11 @@ export function About () {
                     <ContainerAboutText>
                         Here are a few technologies I’ve been working with recently:
                     </ContainerAboutText>
+                    <SkillsContainer>
+                        <SkillsImage/> <SkillsTitle>Javascript (ES6+)</SkillsTitle>
+                        <SkillsImage/> <SkillsTitle>React</SkillsTitle>
+                        <SkillsImage/> <SkillsTitle>Typescript</SkillsTitle>
+                    </SkillsContainer>
                 </ContainerAboutLeft>
                 <ContainerAboutRight>
                     <HeaderImage src={gatinhoImage}/>

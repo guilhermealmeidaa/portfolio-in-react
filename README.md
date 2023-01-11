@@ -9,3 +9,7 @@ npm install --save styled-components
 PARA INSTALAR TYPESCRIPT:
 
 npm install typescript --save-dev
+
+PARA INSTALAR ICONS: 
+
+npm install react-icons --save
