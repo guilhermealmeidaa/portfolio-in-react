@@ -25,7 +25,6 @@ const rotate = keyframes`
     justify-content: space-between;
     margin: 30px 0px 30px 0px;
     margin-top: 40px;
-
     `;
 
     export const ContainerLogo = styled.div`
@@ -39,6 +38,9 @@ const rotate = keyframes`
    export const MenuItem = styled.div`
     display: flex;
     gap: 30px;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
     `;
     export const MenuItemCouple = styled.div`
     display: flex;
@@ -81,7 +83,6 @@ const rotate = keyframes`
     font-family: 'Fira Code', monospace;
     font-size: 13px;
     background-color: #00000000;
-    animation: ${rotate} 500ms ease-in;
 
     cursor: pointer;
     &:hover{

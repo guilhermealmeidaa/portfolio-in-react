@@ -9,16 +9,16 @@ export function Header() {
                 <ContainerMenuitem >
                     <MenuItem>
                         <MenuItemCouple>
-                            <MenuItemText transform="100ms"><MenuItemNumber>01. </MenuItemNumber>About</MenuItemText>
+                            <MenuItemText><MenuItemNumber>01. </MenuItemNumber>About</MenuItemText>
                         </MenuItemCouple>
                         <MenuItemCouple>
-                            <MenuItemText transform="200ms"><MenuItemNumber>02. </MenuItemNumber>Experience</MenuItemText>
+                            <MenuItemText><MenuItemNumber>02. </MenuItemNumber>Experience</MenuItemText>
                         </MenuItemCouple>
                         <MenuItemCouple>
-                            <MenuItemText transform="300ms"> <MenuItemNumber>03. </MenuItemNumber>Work</MenuItemText>
+                            <MenuItemText> <MenuItemNumber>03. </MenuItemNumber>Work</MenuItemText>
                         </MenuItemCouple>
                         <MenuItemCouple>
-                            <MenuItemText transform="400ms"><MenuItemNumber>04. </MenuItemNumber>Contact</MenuItemText>
+                            <MenuItemText><MenuItemNumber>04. </MenuItemNumber>Contact</MenuItemText>
                         </MenuItemCouple>
                     </MenuItem>
                     <MenuItemButton>Resume</MenuItemButton>

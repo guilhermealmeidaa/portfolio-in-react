@@ -1,16 +1,4 @@
 import styled, { keyframes } from "styled-components";
-const rotate = keyframes`
-  from {
-    margin-bottom: 10%;
-    opacity: 0;
-    width: auto;
-  }
-  to {
-    margin-bottom: 15px;
-    opacity: 1;
-    width: auto;
-  }
-`;
 
 export const Container = styled.div`
         width: 100%;
@@ -21,6 +9,9 @@ export const Container = styled.div`
         justify-content: flex-start;
         padding-bottom: 60px;
         margin-bottom: 90px;
+        @media only screen and (max-width: 768px) {
+            margin-top: 100px;
+        }
         
     `;
     export const ContainerTitle = styled.div`
@@ -41,7 +32,9 @@ export const Container = styled.div`
         color: #42c6a7;
         font-family: 'Fira Code', monospace;
         margin-bottom: 17px;
-        animation: ${rotate} 1000ms ease-in;
+        @media only screen and (max-width: 768px) {
+            font-size: 15px;
+        }
     `;
     export const TextName = styled.h1`
         font-size: 4rem;
@@ -49,10 +42,10 @@ export const Container = styled.div`
         color: #ccd6f6;
         margin-bottom: 12px;
         font-family: 'Inter', sans-serif;
-        animation: ${rotate} 1200ms ease-in;
-
-        /* opacity: 0;
-        transition: opacity 500ms ease-in */
+        @media only screen and (max-width: 768px) {
+            font-size: 32px;
+            margin-top: 10px;
+        }
     `;
     export const TextSubname = styled.h1`
         font-size: 3.5rem;
@@ -60,17 +53,17 @@ export const Container = styled.div`
         color: #8892b0;
         font-family: 'Inter', sans-serif;
         margin-bottom: 17px;
-        animation: ${rotate} 1400ms ease-in;
-
+        @media only screen and (max-width: 768px) {
+            font-size: 32px;
+        }
     `;
     export const TextParagraph = styled.p`
         font-size: 1rem;
         font-weight: 200;
         color: #8892b0;
         font-family: 'Inter', sans-serif;
-        max-width: 50%;
+        max-width: 100%;
         line-height: 25px;
-        animation: ${rotate} 1600ms ease-in;
 
     `;
     export const ContainerButton = styled.div`
@@ -91,7 +84,6 @@ export const Container = styled.div`
         font-size: 13px;
         background-color: #00000000;
         cursor: pointer;
-        animation: ${rotate} 1800ms ease-in;
         &:hover{
             background-color: #073043;
             transition: 0.3s;

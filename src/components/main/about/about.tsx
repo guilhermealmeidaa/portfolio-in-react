@@ -1,37 +1,37 @@
 import { AboutNumber, AboutTitle, Container, ContainerAbout, ContainerAboutAll, ContainerAboutLeft, ContainerAboutRight, ContainerAboutText, HeaderImage, SkillsContainer, SkillsImage, SkillsTitle } from "./styles"
 import gatinhoImage from "../../../assets/gatinho.jpeg";
-import { BiRightArrow } from "react-icons/bi";
 
 
 export function About () {
     
-    const handleScroll = () => { 
-        if (document.documentElement.scrollTop >  227) {
-            return true;
-         } 
-       }
     return(
         <Container>
             <ContainerAbout>
-                <AboutTitle><AboutNumber>01. </AboutNumber>Sobre mim</AboutTitle>
+                <AboutTitle><AboutNumber>01. </AboutNumber>About me</AboutTitle>
                 <ContainerAboutAll>
                 <ContainerAboutLeft>
                     <ContainerAboutText>
-                        Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                        Hello, my name is Guilherme. My interest in web development started right after the pandemic, when I had an endless college vacation and ventured into totally random subjects, like gastronomy. Fortunately, I also found the development area, which I have been passionate about ever since.
                     </ContainerAboutText>
                     <ContainerAboutText>
-                        Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
+                    Moving forward to today, I had the opportunity to work in some start-up's. Among them, MadeiraMadeira, the company where I work today in the development team in the Front-End area. My main objectives today are based on improving my knowledge and developing more and more autonomy.
                     </ContainerAboutText>
                     <ContainerAboutText>
-                        I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.
+                    I also participated in the robotics team at Universidade Federal do ABC, where I fell in love with programming and vibrated a lot in several competitions.
                     </ContainerAboutText>
                     <ContainerAboutText>
                         Here are a few technologies I’ve been working with recently:
                     </ContainerAboutText>
                     <SkillsContainer>
-                        <SkillsImage/> <SkillsTitle>Javascript (ES6+)</SkillsTitle>
-                        <SkillsImage/> <SkillsTitle>React</SkillsTitle>
-                        <SkillsImage/> <SkillsTitle>Typescript</SkillsTitle>
+                        <div>
+                            <SkillsImage/> <SkillsTitle>Typescript</SkillsTitle>    
+                        </div> 
+                        <div>
+                            <SkillsImage/> <SkillsTitle>React.JS</SkillsTitle>
+                        </div> 
+                        <div>
+                            <SkillsImage/> <SkillsTitle>React Native</SkillsTitle>
+                        </div> 
                     </SkillsContainer>
                 </ContainerAboutLeft>
                 <ContainerAboutRight>

@@ -1,18 +1,18 @@
 import { Container, ContainerTitle, ContainerText, TextApresentation, TextName, TextSubname, TextParagraph, ContainerButton, Button } from './styles';
 
-export function Title(primary: boolean) {
+export function Title() {
     return (
         <Container>
             <ContainerTitle>
                 <ContainerText>
-                    <TextApresentation>Olá, meu nome é</TextApresentation>
+                    <TextApresentation>Hello! My name is</TextApresentation>
                     <TextName>Guilherme Almeida.</TextName>
-                    <TextSubname>Eu faço coisas para a internet! :) </TextSubname>
-                    <TextParagraph>Sou Desenvolvedor Front-End e um amante de tecnologia e programação. Atualmente, estou focado em React e Typescript. Sempre procurando ajudar pessoas e resolver problemas.</TextParagraph>
+                    <TextSubname>I build things for the web. :) </TextSubname>
+                    <TextParagraph>I am a Front-End Developer and a lover of technology and programming. Currently, I'm focused on React and Typescript. Always looking to help people and solve problems.</TextParagraph>
                 </ContainerText>
             </ContainerTitle>
             <ContainerButton>
-                        <Button>Curriculo</Button>
+                        <Button>Check out my linkedin!</Button>
                     </ContainerButton>
         </Container>
     );   
